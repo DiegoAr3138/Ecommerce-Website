@@ -1,0 +1,47 @@
+- Creamos el entorno virtual con:
+
+python -m venv (nombre)
+
+- Para aceder al entorno virtual usamos el siguiente comando:
+
+    source virtual/Script/activate
+
+- procedemos a instalar todas las librerias que vamos a usar 
+
+    pip install (librerias)
+
+- procedemos a crear el proyecto  en django con el sigueinte comando:
+
+    django-admin startproject (nombre que le asignamos)
+    django-admin startproject ecom
+
+- procedemos a iniciar el proyecto con el siguiente comando 
+
+    python manege.py startapp (nombre)
+    python manege.py startapp tienda
+
+- una vez hecho esto modificamos los archovos urls y setting agregando la configuracion de este video
+para poder leer las urls
+
+https://www.youtube.com/watch?v=u6R4vBa7ZK4&list=PLCC34OHNcOtpRfBYk-8y0GMO4i1p1zn50&index=2
+
+- tenemos que ubicarnos en el archivo donde esta el manage.py  para poder hacer una migracion
+y usanos el siguiente comando 
+
+    python manage.py migrate
+
+- seguido a eso necesitamos crear un super usuario  con el comando 
+
+    winpty python manage.py createsuperuser
+
+- Seguido a eso podemos crear nuestros modelos en la parte de models.py
+donde estos nos van ayudar para crear la base de datos de todo esto
+
+- una vez creados los modelos necesitamos ahcer una migracion a la base de datos la cual la
+hacemos con el siguiente comando 
+
+    python manage.py makemigrations
+
+- luego impulsamos la migracion con el comando 
+
+    python manage.py migrate
